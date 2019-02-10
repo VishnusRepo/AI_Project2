@@ -109,11 +109,21 @@ public class Main {
         return d;
     }
 
-    static String pickFromRemaining(Set<String> ass, HashSet<String> vars){
+    static String pickFromRemaining(DataHolder d){
+        String ret=null;
+        int mrv = Integer.MAX_VALUE;
+        Set<String> vars=d.domains.keySet();
+        Set<String> assigned_keyset = d.assignmentMap.keySet();
         for(String x: vars){
-            if(!ass.contains(x)) return x;
+            if(!assigned_keyset.contains(x)){
+                int current_domain_size = d.domains.get(x).size();
+                if(mrv>current_domain_size){
+                    mrv=current_domain_size;
+                    ret=x;
+                }
+            }
         }
-        return null;
+        return ret;
     }
     static boolean consistencyCheck(HashMap<String, Integer> ass, String var, int val){
         System.out.println("consistencyCheck: Variable: "+var);
@@ -125,8 +135,11 @@ public class Main {
             System.out.println("Neighbor Node: "+next.getId());
             if(next.getId().equals(var)) continue;
             System.out.println("Current Assignment set: "+ass);
-            System.out.println("Neighbor Node assignment: "+ass.get(next.getId()));
-            if(ass.get(next.getId())!=null&&ass.get(next.getId())==val) return false;
+            //System.out.println("Neighbor Node assignment: "+ass.get(next.getId()));
+            //if(ass.get(next.getId())!=null&&ass.get(next.getId())==val) return false;
+            Edge e = curr.getEdgeBetween(next);
+            String operation = e.getAttribute("operation");
+            if(ass.get(next.getId())!=null&&!constraintSatisfied(operation,ass.get(next.getId()),val)) return false;
         }
         return true;
     }
@@ -163,7 +176,7 @@ public class Main {
     static boolean BackTrack(DataHolder d) throws CloneNotSupportedException, IOException, ClassNotFoundException {
         System.out.println("BackTrack: Current assignments: "+d.assignmentMap);
         System.out.println("Domains: "+d.domains);
-        String var = pickFromRemaining(d.assignmentMap.keySet(),variableList);
+        String var = pickFromRemaining(d);
         if(var==null){
             finalData=d;
             return true;
@@ -212,6 +225,7 @@ public class Main {
         //System.out.println(d1.assignmentMap);
         //System.out.println(d1.domains);
         BackTrack(data);
+        System.out.println(data.domains);
         System.out.println("final data: "+finalData.assignmentMap);
     }
 }
