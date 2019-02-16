@@ -1,4 +1,4 @@
-package com.company;
+//package com.company;
 
 import java.io.*;
 import java.nio.file.Path;
@@ -465,7 +465,7 @@ public class Main {
                 d = d + itr1.next()+"\n";
             }
             Iterator<String> itr2 = conflictList.iterator();
-            d = "InCorrect Assignments below:\n";
+            d =d+ "InCorrect Assignments below:\n";
             while(itr2.hasNext()){
                 d = d + itr2.next()+"\n";
             }
