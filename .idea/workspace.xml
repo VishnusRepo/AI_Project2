@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d73b19c6-d6ee-4f69-b8b0-6d98e03052cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AI_Project2/com/company/DataHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_Project2/com/company/DataHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AI_Project2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AI_Project2/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="380" column="52" selection-start-line="380" selection-start-column="37" selection-end-line="380" selection-end-column="52" />
+            <state relative-caret-position="1232">
+              <caret line="265" column="41" selection-start-line="265" selection-start-column="41" selection-end-line="265" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,6 +66,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -90,35 +88,6 @@
               <item name="AI_Project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="AI_Project2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="AI_Project2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="AI_Project2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="AI_Project2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="AI_Project2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="AI_Project2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="AI_Project2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="AI_Project2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="company" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -149,7 +118,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="AI_Project2" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;C:\MS\ncsu\SUBJECTS\second sem\artificial intelligence\assignments\AI_Project2\Problems_updated\Problems_updated\Zebra.txt&quot; &quot;backtrack&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;C:\MS\ncsu\SUBJECTS\second sem\artificial intelligence\assignments\AI_Project2\Problems_updated\Problems_updated\Sudoku_v2.txt&quot; &quot;backtrack&quot; &quot;mrv&quot;" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -187,7 +156,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14736842" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15465587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -218,8 +187,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="380" column="52" selection-start-line="380" selection-start-column="37" selection-end-line="380" selection-end-column="52" />
+        <state relative-caret-position="1232">
+          <caret line="265" column="41" selection-start-line="265" selection-start-column="41" selection-end-line="265" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
